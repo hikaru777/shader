@@ -7,18 +7,32 @@
 
 import SwiftUI
 
+struct ChangeColorModifier: ViewModifier {
+    @ObservedObject var manager: MotionManager
+    
+    func body(content: Content) -> some View {
+        content
+            .colorEffect(ShaderLibrary.slopeSeppenImage(.float(Float(manager.pitch)),.float(Float(manager.roll))))
+    }
+}
+
+extension View {
+    func colorChangeEffect(manager: MotionManager) -> some View {
+        modifier(ChangeColorModifier(manager: manager))
+    }
+}
+
 struct ContentView: View {
+    @State var motionManager = MotionManager()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "heart.fill")
                 .imageScale(.large)
+                .foregroundStyle(.pink)
                 .foregroundStyle(.tint)
+                .colorChangeEffect(manager: motionManager)
             Text("Hello, world!")
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

@@ -11,6 +11,8 @@
 		5DD15B1F2C27CC380085CD7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD15B1E2C27CC380085CD7F /* ContentView.swift */; };
 		5DD15B212C27CC390085CD7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD15B202C27CC390085CD7F /* Assets.xcassets */; };
 		5DD15B242C27CC390085CD7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD15B232C27CC390085CD7F /* Preview Assets.xcassets */; };
+		5DD15B2B2C27CC540085CD7F /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5DD15B2A2C27CC540085CD7F /* Shader.metal */; };
+		5DD15B2D2C27CC8B0085CD7F /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD15B2C2C27CC8B0085CD7F /* MotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		5DD15B1E2C27CC380085CD7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5DD15B202C27CC390085CD7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DD15B232C27CC390085CD7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5DD15B2A2C27CC540085CD7F /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		5DD15B2C2C27CC8B0085CD7F /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				5DD15B1E2C27CC380085CD7F /* ContentView.swift */,
 				5DD15B202C27CC390085CD7F /* Assets.xcassets */,
 				5DD15B222C27CC390085CD7F /* Preview Content */,
+				5DD15B2A2C27CC540085CD7F /* Shader.metal */,
+				5DD15B2C2C27CC8B0085CD7F /* MotionManager.swift */,
 			);
 			path = SlopeColorChageEffect;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DD15B1F2C27CC380085CD7F /* ContentView.swift in Sources */,
+				5DD15B2B2C27CC540085CD7F /* Shader.metal in Sources */,
 				5DD15B1D2C27CC380085CD7F /* SlopeColorChageEffectApp.swift in Sources */,
+				5DD15B2D2C27CC8B0085CD7F /* MotionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +288,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +318,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
